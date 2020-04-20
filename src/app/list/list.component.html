@@ -1,0 +1,48 @@
+<div cdkDropListGroup>
+  <mat-card class="container" *ngFor="let list of jobLists; let i = index">
+    <h2 class="list-title">
+      {{ list.name }} ({{ list.jobs.length }})
+      <mat-icon
+        class="icon-delete"
+        aria-hidden="false"
+        aria-label="Delete"
+        color="warn"
+        (click)="deleteList(i)"
+        >delete</mat-icon
+      >
+    </h2>
+
+    <div
+      class="list"
+      cdkDropList
+      [cdkDropListData]="list.jobs"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div
+        class="box"
+        *ngFor="let item of list.jobs; let j = index"
+        cdkDrag
+        [cdkDragData]="item"
+      >
+        <div class="custom-placeholder" *cdkDragPlaceholder></div>
+
+        {{ item }}
+
+        <mat-icon
+          class="icon-delete"
+          aria-hidden="false"
+          aria-label="Delete"
+          color="warn"
+          (click)="deleteJob(i, j)"
+          >delete</mat-icon
+        >
+      </div>
+    </div>
+
+    <app-add-new placeholder="New Job" [listIndex]="i"></app-add-new>
+  </mat-card>
+
+  <div class="add-list">
+    <app-add-new placeholder="New List"></app-add-new>
+  </div>
+</div>
