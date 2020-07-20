@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { JobListService } from "../job-list.service";
-import { MatSnackBar } from "@angular/material";
+import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
   selector: "app-add-new",

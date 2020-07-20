@@ -4,7 +4,7 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from "@angular/cdk/drag-drop";
-import { MatDialog } from "@angular/material";
+import { MatDialog } from "@angular/material/dialog";
 import { DialogConfirmDeleteComponent } from "../dialog-confirm-delete/dialog-confirm-delete.component";
 import { JobList } from "src/app/job-list.model";
 import { JobListService } from "../job-list.service";

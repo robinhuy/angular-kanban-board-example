@@ -1,4 +1,4 @@
-# Source code ví dụ mẫu Kanban Board viết bằng Angular 8
+# Source code ví dụ mẫu Kanban Board viết bằng Angular 9
 
 ## Chạy ứng dụng trên môi trường development
 
