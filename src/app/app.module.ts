@@ -1,9 +1,8 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
-import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from "@angular/forms";
+import { DragDropModule } from "@angular/cdk/drag-drop";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
@@ -14,7 +13,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatToolbarModule } from "@angular/material/toolbar";
 
-import { DragDropModule } from "@angular/cdk/drag-drop";
+import { AppComponent } from "./app.component";
 import { AddNewComponent } from "./add-new/add-new.component";
 import { ListComponent } from "./list/list.component";
 import { DialogConfirmDeleteComponent } from "./dialog-confirm-delete/dialog-confirm-delete.component";
@@ -40,7 +39,7 @@ import { DialogConfirmDeleteComponent } from "./dialog-confirm-delete/dialog-con
     MatSnackBarModule,
     MatToolbarModule,
   ],
-  entryComponents: [DialogConfirmDeleteComponent],
+  entryComponents: [DialogConfirmDeleteComponent],  // Not neccessary in Angular 9 and above
   providers: [],
   bootstrap: [AppComponent],
 })

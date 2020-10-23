@@ -1,4 +1,4 @@
-# Source code ví dụ mẫu Kanban Board viết bằng Angular 9
+# Source code ví dụ mẫu Kanban Board viết bằng Angular 10
 
 ## Chạy ứng dụng trên môi trường development
 
@@ -8,4 +8,4 @@
 
 ## Chạy ứng dụng trên môi trường production
 
-Chạy lệnh `ng build --prod` để build project. Code sau khi build xong sẽ nằm trong thư mục `dist/`. Đẩy code bên trong thư mục `dist` lên server có thể serve static files.
+Chạy lệnh `ng build --prod` để build project. Code sau khi build xong sẽ nằm trong thư mục `dist`. Đẩy code bên trong thư mục `dist` lên server có thể serve static files.
